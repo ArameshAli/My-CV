@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Work Experience
+title: Experience
 permalink: /experience/
 subtitle: ""
 feature-img: "assets/img/pexels/travel2.JPG"
@@ -8,27 +8,21 @@ position: 3
 ---
 
 <style>
-  .exp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-bottom: 2.5rem; }
-  .exp-card { background: #ffffff; border: 1px solid #f0f0f0; border-radius: 10px; padding: 1.25rem; border-left: 3px solid #e8440a; transition: border-left-color 0.2s; }
-  .exp-card:hover { border-left-color: #2e8bef; }
-  .exp-card.muted { border-left-color: #d0d0d0; background: #fafafa; }
-  .exp-card.muted:hover { border-left-color: #aaa; }
+  .exp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; padding: 1rem 0; }
+  .exp-card { background: #ffffff; border: 1px solid #f0f0f0; border-radius: 10px; padding: 1.4rem; border-left: 3px solid #2e7dd1; transition: border-left-color 0.2s; }
+  .exp-card:hover { border-left-color: #1a5aab; }
   .exp-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 4px; }
-  .exp-title { font-size: 1rem; font-weight: 700; color: #0f1f3d; margin: 0; }
-  .exp-date { font-size: 0.75rem; font-weight: 600; color: #e8440a; white-space: nowrap; padding-top: 2px; }
-  .exp-card.muted .exp-date { color: #999; }
-  .exp-org { font-size: 0.82rem; color: #888; margin-bottom: 10px; font-style: italic; }
-  .exp-body { font-size: 0.9rem; color: #555; line-height: 1.7; margin: 0 0 8px; }
+  .exp-title { font-size: 1.05rem; font-weight: 700; color: #0f1f3d; margin: 0; }
+  .exp-date { font-size: 0.82rem; font-weight: 600; color: #2e7dd1; white-space: nowrap; padding-top: 2px; }
+  .exp-org { font-size: 0.9rem; color: #888; margin-bottom: 10px; font-style: italic; }
+  .exp-body { font-size: 0.95rem; color: #555; line-height: 1.75; margin: 0 0 8px; }
   .exp-body ul { padding-left: 1.1rem; margin: 0; }
-  .exp-body li { margin-bottom: 4px; }
+  .exp-body li { margin-bottom: 5px; }
   .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
-  .tag { font-size: 0.75rem; font-weight: 600; padding: 3px 10px; border-radius: 20px; background: #f4f4f4; color: #444; }
-  .section-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; color: #e8440a; text-transform: uppercase; margin-bottom: 12px; }
+  .tag { font-size: 0.8rem; font-weight: 600; padding: 4px 11px; border-radius: 20px; background: #f0f5fc; color: #2e7dd1; }
 </style>
 
 <div style="max-width: 860px; margin: 2rem auto; padding: 0 1rem;">
-
-<p class="section-label">Industry</p>
 <div class="exp-grid">
 
   <div class="exp-card">
@@ -67,11 +61,6 @@ position: 3
     </div>
   </div>
 
-</div>
-
-<p class="section-label">Academia</p>
-<div class="exp-grid">
-
   <div class="exp-card">
     <div class="exp-header">
       <p class="exp-title">Postdoctoral Researcher</p>
@@ -106,12 +95,7 @@ position: 3
     </div>
   </div>
 
-</div>
-
-<p class="section-label">Visiting Research</p>
-<div class="exp-grid">
-
-  <div class="exp-card muted">
+  <div class="exp-card">
     <div class="exp-header">
       <p class="exp-title">Visiting Researcher</p>
       <span class="exp-date">Feb 2016 – Feb 2017</span>
@@ -127,7 +111,7 @@ position: 3
     </div>
   </div>
 
-  <div class="exp-card muted">
+  <div class="exp-card">
     <div class="exp-header">
       <p class="exp-title">Visiting Researcher</p>
       <span class="exp-date">Oct 2015 – Jan 2016</span>
@@ -144,5 +128,4 @@ position: 3
   </div>
 
 </div>
-
 </div>
