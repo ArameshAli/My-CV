@@ -4,6 +4,45 @@ feature-img: "assets/img/pexels/github_page.jpg"
 ---
 
 <style>
+  /* ============================================ */
+  /* INCREASE BANNER IMAGE HEIGHT                  */
+  /* ============================================ */
+  
+  /* Target the page header/banner container */
+  .page-header {
+    min-height: 450px !important;
+    position: relative;
+  }
+  
+  /* Target the banner image itself */
+  .page-header .header-image,
+  .page-header img,
+  .feature-img img,
+  .page__hero-image {
+    height: 450px !important;
+    object-fit: cover !important;
+    width: 100%;
+  }
+  
+  /* Target the hero overlay if your theme uses it */
+  .page__hero--overlay {
+    min-height: 450px !important;
+  }
+  
+  /* Add spacing below the banner so content doesn't feel cramped */
+  .page-content {
+    padding-top: 2rem !important;
+  }
+  
+  /* If your theme has a main container, adjust top margin */
+  .main-content {
+    margin-top: 1rem;
+  }
+  
+  /* ============================================ */
+  /* YOUR EXISTING STYLES (unchanged below)       */
+  /* ============================================ */
+  
   .home-container {
     max-width: 900px;
     margin: 0 auto;
@@ -203,6 +242,18 @@ feature-img: "assets/img/pexels/github_page.jpg"
     }
     .name {
       font-size: 1.75rem;
+    }
+    
+    /* Smaller banner on mobile */
+    .page-header {
+      min-height: 250px !important;
+    }
+    
+    .page-header .header-image,
+    .page-header img,
+    .feature-img img,
+    .page__hero-image {
+      height: 250px !important;
     }
   }
 </style>
