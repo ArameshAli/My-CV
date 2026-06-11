@@ -1,11 +1,3 @@
---- 
-layout: page
-title : Education 
-permalink: /Education/
-subtitle: "" 
-feature-img: "assets/img/pexels/travel2.JPG"
-position: 4
----
 ---
 layout: page
 title: Education
