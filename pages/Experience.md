@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Experience
+title: Work Experience
 permalink: /experience/
 subtitle: ""
 feature-img: "assets/img/pexels/travel2.JPG"
