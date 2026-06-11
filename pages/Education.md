@@ -8,71 +8,55 @@ position: 4
 ---
 
 <style>
-  .exp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; padding: 1rem 0; }
-  .exp-card { background: #ffffff; border: 1px solid #f0f0f0; border-radius: 10px; padding: 1.4rem; border-left: 3px solid #2e7dd1; transition: border-left-color 0.2s; }
-  .exp-card:hover { border-left-color: #1a5aab; }
-  .exp-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 4px; }
-  .exp-title { font-size: 1.05rem; font-weight: 700; color: #0f1f3d; margin: 0; }
-  .exp-date { font-size: 0.82rem; font-weight: 600; color: #2e7dd1; white-space: nowrap; padding-top: 2px; }
-  .exp-org { font-size: 0.9rem; color: #888; margin-bottom: 10px; font-style: italic; }
-  .exp-body { font-size: 0.95rem; color: #555; line-height: 1.75; margin: 0 0 8px; }
-  .exp-body ul { padding-left: 1.1rem; margin: 0; }
-  .exp-body li { margin-bottom: 5px; }
-  .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .edu-timeline { position: relative; max-width: 680px; margin: 2rem auto; padding: 0 1rem; }
+  .edu-timeline::before { content: ''; position: absolute; left: 28px; top: 0; bottom: 0; width: 1px; background: #d0dff0; }
+  .edu-entry { position: relative; padding-left: 72px; margin-bottom: 2.5rem; }
+  .edu-dot { position: absolute; left: 20px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: #fff; border: 2.5px solid #2e7dd1; }
+  .edu-year { font-size: 0.78rem; font-weight: 700; color: #2e7dd1; letter-spacing: 0.04em; margin-bottom: 6px; }
+  .edu-degree { font-size: 1.1rem; font-weight: 700; color: #0f1f3d; margin-bottom: 3px; }
+  .edu-institution { font-size: 0.92rem; color: #888; font-style: italic; margin-bottom: 12px; }
+  .edu-thesis-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; color: #2e7dd1; text-transform: uppercase; margin-bottom: 5px; }
+  .edu-thesis { font-size: 0.95rem; color: #555; line-height: 1.75; margin-bottom: 10px; }
+  .tag-row { display: flex; flex-wrap: wrap; gap: 6px; }
   .tag { font-size: 0.8rem; font-weight: 600; padding: 4px 11px; border-radius: 20px; background: #f0f5fc; color: #2e7dd1; }
 </style>
 
-<div style="max-width: 860px; margin: 2rem auto; padding: 0 1rem;">
-<div class="exp-grid">
+<div class="edu-timeline">
 
-  <div class="exp-card">
-    <div class="exp-header">
-      <p class="exp-title">Master of Digital Text Analysis</p>
-      <span class="exp-date">2023 – 2025</span>
-    </div>
-    <p class="exp-org">University of Antwerp — Belgium</p>
-    <div class="exp-body">
-      <ul>
-        <li>Investigated retrieval effectiveness, local awareness, and context utilisation in long-context LLMs using large-scale Needle-in-a-Haystack evaluation frameworks.</li>
-        <li>Designed large-scale benchmarking frameworks using synthetic data and evaluation pipelines.</li>
-      </ul>
-    </div>
+  <div class="edu-entry">
+    <div class="edu-dot"></div>
+    <p class="edu-year">2023 – 2025</p>
+    <p class="edu-degree">Master of Digital Text Analysis</p>
+    <p class="edu-institution">University of Antwerp — Belgium</p>
+    <p class="edu-thesis-label">Thesis</p>
+    <p class="edu-thesis">Investigated retrieval effectiveness, local awareness, and context utilisation in long-context LLMs using large-scale Needle-in-a-Haystack evaluation frameworks. Designed large-scale benchmarking frameworks using synthetic data and evaluation pipelines.</p>
     <div class="tag-row">
       <span class="tag">LLMs</span><span class="tag">RAG</span><span class="tag">Benchmarking</span><span class="tag">NLP</span>
     </div>
   </div>
 
-  <div class="exp-card">
-    <div class="exp-header">
-      <p class="exp-title">Ph.D. in Physics</p>
-      <span class="exp-date">2017 – 2021</span>
-    </div>
-    <p class="exp-org">University of Antwerp — Belgium</p>
-    <div class="exp-body">
-      <ul>
-        <li>Developed numerical simulations, computational models, and data analysis workflows to study charge transport and electronic properties in quantum materials.</li>
-      </ul>
-    </div>
+  <div class="edu-entry">
+    <div class="edu-dot"></div>
+    <p class="edu-year">2017 – 2021</p>
+    <p class="edu-degree">Ph.D. in Physics</p>
+    <p class="edu-institution">University of Antwerp — Belgium</p>
+    <p class="edu-thesis-label">Thesis</p>
+    <p class="edu-thesis">Developed numerical simulations, computational models, and data analysis workflows to study charge transport and electronic properties in quantum materials.</p>
     <div class="tag-row">
       <span class="tag">Computational modelling</span><span class="tag">Quantum materials</span><span class="tag">Python</span><span class="tag">VASP</span>
     </div>
   </div>
 
-  <div class="exp-card">
-    <div class="exp-header">
-      <p class="exp-title">M.Sc. in Physics</p>
-      <span class="exp-date">2011 – 2014</span>
-    </div>
-    <p class="exp-org">Institute for Advanced Studies in Basic Science — Iran</p>
-    <div class="exp-body">
-      <ul>
-        <li>Studied quantum interaction effects on anisotropic properties of materials.</li>
-      </ul>
-    </div>
+  <div class="edu-entry">
+    <div class="edu-dot"></div>
+    <p class="edu-year">2011 – 2014</p>
+    <p class="edu-degree">M.Sc. in Physics</p>
+    <p class="edu-institution">Institute for Advanced Studies in Basic Science — Iran</p>
+    <p class="edu-thesis-label">Thesis</p>
+    <p class="edu-thesis">Studied quantum interaction effects on anisotropic properties of materials.</p>
     <div class="tag-row">
       <span class="tag">Quantum physics</span><span class="tag">Anisotropy</span><span class="tag">Condensed matter</span>
     </div>
   </div>
 
-</div>
 </div>
