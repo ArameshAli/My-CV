@@ -1,9 +1,10 @@
----
+--- 
 layout: page
-title: Projects
+title : Projects
 permalink: /projects/
-position: 6
+subtitle: "" 
 feature-img: "assets/img/pexels/travel2.JPG"
+position: 6
 ---
 
 ## Projects
