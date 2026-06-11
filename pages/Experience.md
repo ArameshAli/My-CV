@@ -1,319 +1,148 @@
 ---
 layout: page
-title: Experience
-permalink: /Experience/
+title: Work Experience
+permalink: /experience/
+subtitle: ""
 feature-img: "assets/img/pexels/travel2.JPG"
 position: 3
 ---
+
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
- 
-  :root {
-    --bg: #0b0e13;
-    --surface: #13171f;
-    --border: #1e2430;
-    --accent: #4ef0c4;
-    --accent2: #7b6ef6;
-    --text: #dde3ef;
-    --muted: #6b7589;
-    --tag-bg: #1a1f2e;
-  }
- 
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'DM Mono', monospace;
-    min-height: 100vh;
-    padding: 4rem 1.5rem;
-    overflow-x: hidden;
-  }
- 
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image:
-      linear-gradient(rgba(78,240,196,0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(78,240,196,0.03) 1px, transparent 1px);
-    background-size: 40px 40px;
-    pointer-events: none;
-    z-index: 0;
-  }
- 
-  .container {
-    max-width: 860px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-  }
- 
-  .section-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
-    letter-spacing: 0.2em;
-    color: var(--accent);
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-    opacity: 0;
-    animation: fadeUp 0.5s ease forwards;
-  }
- 
-  .section-title {
-    font-family: 'Syne', sans-serif;
-    font-size: clamp(2.2rem, 5vw, 3.5rem);
-    font-weight: 800;
-    line-height: 1;
-    margin-bottom: 3.5rem;
-    opacity: 0;
-    animation: fadeUp 0.5s ease 0.1s forwards;
-  }
- 
-  .section-title span {
-    -webkit-text-stroke: 1px var(--accent2);
-    color: transparent;
-  }
- 
-  .timeline {
-    position: relative;
-    padding-left: 2rem;
-  }
- 
-  .timeline::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 8px;
-    bottom: 8px;
-    width: 1px;
-    background: linear-gradient(to bottom, var(--accent), var(--accent2), transparent);
-  }
- 
-  .entry {
-    position: relative;
-    margin-bottom: 3rem;
-    opacity: 0;
-    transform: translateX(-16px);
-  }
- 
-  .entry.visible {
-    animation: slideIn 0.55s ease forwards;
-  }
- 
-  .entry::before {
-    content: '';
-    position: absolute;
-    left: -2.375rem;
-    top: 8px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: var(--accent);
-    box-shadow: 0 0 10px var(--accent);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
- 
-  .entry:hover::before {
-    transform: scale(1.5);
-    box-shadow: 0 0 18px var(--accent);
-  }
- 
-  .entry-inner {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.5rem 1.75rem;
-    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: default;
-  }
- 
-  .entry-inner:hover {
-    border-color: var(--accent);
-    transform: translateX(6px);
-    box-shadow: -4px 0 24px rgba(78,240,196,0.08);
-  }
- 
-  .date {
-    display: inline-block;
-    font-size: 0.68rem;
-    letter-spacing: 0.12em;
-    color: var(--accent);
-    background: rgba(78,240,196,0.08);
-    border: 1px solid rgba(78,240,196,0.2);
-    border-radius: 4px;
-    padding: 0.2rem 0.55rem;
-    margin-bottom: 0.85rem;
-  }
- 
-  .role {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 0.2rem;
-    line-height: 1.3;
-  }
- 
-  /* Thesis title link */
-  .thesis {
-    font-size: 0.75rem;
-    color: var(--accent2);
-    font-style: italic;
-    margin-bottom: 0.85rem;
-    display: block;
-  }
- 
-  .thesis::before {
-    content: '⌗ ';
-    color: var(--muted);
-    font-style: normal;
-  }
- 
-  .org {
-    font-size: 0.75rem;
-    color: var(--muted);
-    margin-bottom: 1rem;
-    letter-spacing: 0.05em;
-  }
- 
-  .org span {
-    color: var(--accent2);
-    font-style: italic;
-  }
- 
-  .bullets {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
- 
-  .bullets li {
-    font-size: 0.8rem;
-    line-height: 1.6;
-    color: #9aa3b8;
-    padding-left: 1.1rem;
-    position: relative;
-  }
- 
-  .bullets li::before {
-    content: '›';
-    position: absolute;
-    left: 0;
-    color: var(--accent);
-    font-size: 1rem;
-    line-height: 1.4;
-  }
- 
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    margin-top: 1.1rem;
-  }
- 
-  .tag {
-    font-size: 0.62rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--accent2);
-    background: rgba(123,110,246,0.1);
-    border: 1px solid rgba(123,110,246,0.25);
-    border-radius: 3px;
-    padding: 0.18rem 0.5rem;
-  }
- 
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(12px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
- 
-  @keyframes slideIn {
-    from { opacity: 0; transform: translateX(-16px); }
-    to   { opacity: 1; transform: translateX(0); }
-  }
- 
-  .entry:nth-child(1) { animation-delay: 0.2s; }
-  .entry:nth-child(2) { animation-delay: 0.35s; }
-  .entry:nth-child(3) { animation-delay: 0.5s; }
-  .entry:nth-child(4) { animation-delay: 0.65s; }
+  .exp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-bottom: 2.5rem; }
+  .exp-card { background: #ffffff; border: 1px solid #f0f0f0; border-radius: 10px; padding: 1.25rem; border-left: 3px solid #e8440a; transition: border-left-color 0.2s; }
+  .exp-card:hover { border-left-color: #2e8bef; }
+  .exp-card.muted { border-left-color: #d0d0d0; background: #fafafa; }
+  .exp-card.muted:hover { border-left-color: #aaa; }
+  .exp-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 4px; }
+  .exp-title { font-size: 1rem; font-weight: 700; color: #0f1f3d; margin: 0; }
+  .exp-date { font-size: 0.75rem; font-weight: 600; color: #e8440a; white-space: nowrap; padding-top: 2px; }
+  .exp-card.muted .exp-date { color: #999; }
+  .exp-org { font-size: 0.82rem; color: #888; margin-bottom: 10px; font-style: italic; }
+  .exp-body { font-size: 0.9rem; color: #555; line-height: 1.7; margin: 0 0 8px; }
+  .exp-body ul { padding-left: 1.1rem; margin: 0; }
+  .exp-body li { margin-bottom: 4px; }
+  .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .tag { font-size: 0.75rem; font-weight: 600; padding: 3px 10px; border-radius: 20px; background: #f4f4f4; color: #444; }
+  .section-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; color: #e8440a; text-transform: uppercase; margin-bottom: 12px; }
 </style>
- 
-<div class="container">
-  <p class="section-label">// academic background</p>
-  <h2 class="section-title">Edu<span>cation</span></h2>
- 
-  <div class="timeline">
- 
-    <!-- Entry 1 -->
-    <div class="entry visible">
-      <div class="entry-inner">
-        <span class="date">09.2023 — 09.2025</span>
-        <p class="role">Master of Digital Text Analysis</p>
-        <p class="org"><span>University of Antwerp</span> · Antwerp, Belgium</p>
-        <span class="thesis">Enhancing LLM Evaluation: A Synthetic Data Approach to Context Understanding</span>
-        <ul class="bullets">
-          <li>Applying Large Language Models, NLP, Machine Learning, and Data Science to perform computational tasks on diverse textual and numerical content.</li>
-        </ul>
-        <div class="tags">
-          <span class="tag">LLMs</span>
-          <span class="tag">NLP</span>
-          <span class="tag">Machine Learning</span>
-          <span class="tag">RAG</span>
-          <span class="tag">Synthetic Data</span>
-        </div>
-      </div>
+
+<div style="max-width: 860px; margin: 2rem auto; padding: 0 1rem;">
+
+<p class="section-label">Industry</p>
+<div class="exp-grid">
+
+  <div class="exp-card">
+    <div class="exp-header">
+      <p class="exp-title">AI & LLM Engineer</p>
+      <span class="exp-date">Nov 2025 – Present</span>
     </div>
- 
-    <!-- Entry 2 -->
-    <div class="entry visible">
-      <div class="entry-inner">
-        <span class="date">03.2017 — 10.2021</span>
-        <p class="role">Ph.D. in Physics</p>
-        <p class="org"><span>University of Antwerp</span> · Antwerp, Belgium</p>
-        <span class="thesis">Charge Transport in Magnetic Topological Insulators</span>
-        <div class="tags">
-          <span class="tag">Condensed Matter</span>
-          <span class="tag">Topology</span>
-          <span class="tag">Quantum Transport</span>
-          <span class="tag">HPC</span>
-          <span class="tag">VASP</span>
-        </div>
-      </div>
+    <p class="exp-org">ORCALYS — Belgium</p>
+    <div class="exp-body">
+      <ul>
+        <li>Designed and developed end-to-end RAG systems and AI agent solutions for industrial automation and enterprise knowledge management.</li>
+        <li>Built a full-stack AI platform integrating LLMs, vector databases, retrieval pipelines, and secure backend services for intelligent access to technical documentation.</li>
+        <li>Developed agentic workflow automation, scalable APIs, and real-time AI applications.</li>
+      </ul>
     </div>
- 
-    <!-- Entry 3 -->
-    <div class="entry visible">
-      <div class="entry-inner">
-        <span class="date">09.2011 — 04.2014</span>
-        <p class="role">M.Sc. in Physics</p>
-        <p class="org"><span>Institute for Advanced Studies in Basic Science</span> · Iran</p>
-        <ul class="bullets">
-          <li>Studying quantum interaction effects on the anisotropic properties of materials.</li>
-        </ul>
-        <div class="tags">
-          <span class="tag">Quantum Mechanics</span>
-          <span class="tag">Anisotropy</span>
-          <span class="tag">Materials Science</span>
-        </div>
-      </div>
+    <div class="tag-row">
+      <span class="tag">RAG</span><span class="tag">AI Agents</span><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">LLMs</span>
     </div>
- 
-    <!-- Entry 4 -->
-    <div class="entry visible">
-      <div class="entry-inner">
-        <span class="date">09.2003 — 04.2008</span>
-        <p class="role">B.Sc. in Physics</p>
-        <p class="org"><span>University of Tehran</span> · Tehran, Iran</p>
-        <ul class="bullets">
-          <li>Image processing of interferometric patterns for semiconductor surface topography.</li>
-        </ul>
-        <div class="tags">
-          <span class="tag">Image Processing</span>
-          <span class="tag">Interferometry</span>
-          <span class="tag">Semiconductors</span>
-        </div>
-      </div>
-    </div>
- 
   </div>
+
+  <div class="exp-card">
+    <div class="exp-header">
+      <p class="exp-title">LLM Engineer — Intern</p>
+      <span class="exp-date">Oct 2024 – Jul 2025</span>
+    </div>
+    <p class="exp-org">Karel de Grote University of Applied Sciences & Arts — Antwerp, Belgium</p>
+    <div class="exp-body">
+      <ul>
+        <li>Developed NLP and ML pipelines for medical terminology extraction, classification, and simplification using LLMs and embedding-based models.</li>
+        <li>Built and evaluated AI systems using curated medical datasets, semantic embeddings, and benchmark-driven experimentation.</li>
+        <li>Contributed to distributed LLM fine-tuning infrastructure using Ray, Docker, and HPC resources.</li>
+      </ul>
+    </div>
+    <div class="tag-row">
+      <span class="tag">NLP</span><span class="tag">Fine-tuning</span><span class="tag">Ray</span><span class="tag">HPC</span><span class="tag">Medical AI</span>
+    </div>
+  </div>
+
+</div>
+
+<p class="section-label">Academia</p>
+<div class="exp-grid">
+
+  <div class="exp-card">
+    <div class="exp-header">
+      <p class="exp-title">Postdoctoral Researcher</p>
+      <span class="exp-date">Oct 2021 – Jun 2023</span>
+    </div>
+    <p class="exp-org">University of Antwerp — Antwerp, Belgium</p>
+    <div class="exp-body">
+      <ul>
+        <li>Python-based modelling of electrical resistivity at micron and nanometre scales.</li>
+        <li>Computational simulation of quantum, statistical, electrical, and topological phenomena.</li>
+      </ul>
+    </div>
+    <div class="tag-row">
+      <span class="tag">Python</span><span class="tag">Quantum modelling</span><span class="tag">Simulation</span>
+    </div>
+  </div>
+
+  <div class="exp-card">
+    <div class="exp-header">
+      <p class="exp-title">Doctoral Researcher</p>
+      <span class="exp-date">Mar 2017 – Oct 2021</span>
+    </div>
+    <p class="exp-org">University of Antwerp — Antwerp, Belgium</p>
+    <div class="exp-body">
+      <ul>
+        <li>Materials simulations using VASP on an HPC cluster.</li>
+        <li>Numeric and analytical computations using Wolfram Language and Python.</li>
+      </ul>
+    </div>
+    <div class="tag-row">
+      <span class="tag">VASP</span><span class="tag">HPC</span><span class="tag">Mathematica</span><span class="tag">Python</span>
+    </div>
+  </div>
+
+</div>
+
+<p class="section-label">Visiting Research</p>
+<div class="exp-grid">
+
+  <div class="exp-card muted">
+    <div class="exp-header">
+      <p class="exp-title">Visiting Researcher</p>
+      <span class="exp-date">Feb 2016 – Feb 2017</span>
+    </div>
+    <p class="exp-org">Institute for Research in Fundamental Sciences — Iran</p>
+    <div class="exp-body">
+      <ul>
+        <li>Numerical modelling of anomalous transverse electrical properties of magnetic materials.</li>
+      </ul>
+    </div>
+    <div class="tag-row">
+      <span class="tag">Numerical modelling</span><span class="tag">Magnetic materials</span>
+    </div>
+  </div>
+
+  <div class="exp-card muted">
+    <div class="exp-header">
+      <p class="exp-title">Visiting Researcher</p>
+      <span class="exp-date">Oct 2015 – Jan 2016</span>
+    </div>
+    <p class="exp-org">Uppsala University — Uppsala, Sweden</p>
+    <div class="exp-body">
+      <ul>
+        <li>Nanoscale simulations of 2D materials using Quantum ESPRESSO.</li>
+      </ul>
+    </div>
+    <div class="tag-row">
+      <span class="tag">Quantum ESPRESSO</span><span class="tag">2D materials</span><span class="tag">DFT</span>
+    </div>
+  </div>
+
+</div>
+
 </div>
