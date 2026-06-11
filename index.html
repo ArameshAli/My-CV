@@ -2,56 +2,203 @@
 layout: page
 feature-img: "assets/img/pexels/travel2.JPG"
 ---
+<style>
+  .home-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    font-family: inherit;
+  }
 
-<div style="max-width: 800px; margin: 2rem auto; padding: 0 1.5rem; font-family: inherit;">
+  .name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
 
-  <h1 style="font-size: 2rem; font-weight: 700; margin-bottom: 0.25rem;">Amir Sabzalipour</h1>
-  <p style="font-size: 1.1rem; color: #e8440a; font-weight: 600; margin-bottom: 2rem;">
-    AI & LLM Engineer — Antwerp, Belgium
+  .title {
+    font-size: 1.1rem;
+    color: #e8440a;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  .bio-text {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    color: #334155;
+  }
+
+  .expertise-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1.5rem 0 2rem 0;
+  }
+
+  .pill {
+    background: #f4f4f4;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1e293b;
+  }
+
+  .pill-highlight {
+    background: #e0e7ff;
+    color: #4f46e5;
+  }
+
+  .three-columns {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    border-top: 1px solid #eee;
+    padding-top: 1.5rem;
+    margin: 1rem 0 2rem 0;
+  }
+
+  .col {
+    flex: 1;
+    min-width: 180px;
+  }
+
+  .col-title {
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+  }
+
+  .col-text {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+
+  .button-group {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    background: #0f1f3d;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .btn-secondary {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    border: 2px solid #0f1f3d;
+    color: #0f1f3d;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .divider {
+    height: 3px;
+    width: 50px;
+    background: linear-gradient(90deg, #e8440a, #f59e0b);
+    margin: 1rem 0 1.5rem 0;
+    border-radius: 3px;
+  }
+
+  @media (max-width: 600px) {
+    .home-container {
+      padding: 0 1rem;
+    }
+    .name {
+      font-size: 1.75rem;
+    }
+  }
+</style>
+
+<div class="home-container">
+
+  <h1 class="name">Amir Sabzalipour</h1>
+  <p class="title">AI & LLM Engineer — Antwerp, Belgium</p>
+
+  <!-- Core Bio -->
+  <p class="bio-text">
+    I am an <strong>AI & LLM Engineer</strong> specialising in large language models, RAG systems, AI agents, and NLP. 
+    My approach is shaped by a solid background in physics research — where I developed expertise in 
+    <strong>computational modelling, numerical simulations, and large-scale data analysis</strong> — which I now bring 
+    to building reliable, high-performance AI systems.
   </p>
 
-  <p style="line-height: 1.8; margin-bottom: 1.5rem; text-align: justify;">
-    I am an AI & LLM Engineer specialising in large language models, RAG systems, AI agents, 
-    and NLP. I currently work at <strong>ORCALYS</strong>, where I design and build production 
-    AI systems for industrial automation and enterprise knowledge management — from retrieval 
-    pipeline architecture and agentic workflow automation to deployment on cloud and HPC 
-    infrastructure.
+  <p class="bio-text">
+    My work centres on <strong>end-to-end AI system development</strong> — from retrieval pipeline architecture and 
+    benchmark-driven evaluation to production deployment. I specialise in <strong>Needle-in-a-Haystack evaluation frameworks</strong> 
+    for long-context LLMs, <strong>agentic workflow automation</strong>, and building scalable <strong>RAG systems</strong> 
+    with vector databases.
   </p>
 
-  <p style="line-height: 1.8; margin-bottom: 2rem; text-align: justify;">
+  <!-- Divider -->
+  <div class="divider"></div>
+
+  <!-- Expertise Pills (expanded) -->
+  <div class="expertise-pills">
+    <span class="pill pill-highlight">Enterprise RAG</span>
+    <span class="pill pill-highlight">Graph RAG</span>
+    <span class="pill pill-highlight">AI Agents</span>
+    <span class="pill pill-highlight">Agentic Workflows</span>
+    <span class="pill">LLM Evaluation</span>
+    <span class="pill">Retrieval Benchmarking</span>
+    <span class="pill">Synthetic Data Pipelines</span>
+    <span class="pill">NLP Pipelines</span>
+    <span class="pill">Text Classification</span>
+    <span class="pill">Topic Modelling</span>
+    <span class="pill">Terminology Extraction</span>
+    <span class="pill">Semantic Search</span>
+    <span class="pill">Vector Databases</span>
+    <span class="pill">Fine-tuning</span>
+    <span class="pill">Distributed Inference</span>
+    <span class="pill">Docker + Ray</span>
+    <span class="pill">HPC Deployment</span>
+  </div>
+
+  <!-- Education & Research Grounding -->
+  <p class="bio-text">
     My work is grounded in rigorous research. I hold a <strong>Ph.D. in Physics</strong> and a 
     <strong>Master of Digital Text Analysis</strong> from the University of Antwerp, where my 
     thesis focused on evaluating retrieval effectiveness and context utilisation in long-context 
     LLMs using large-scale Needle-in-a-Haystack benchmarking frameworks.
   </p>
 
-  <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
-    <span style="background: #f4f4f4; padding: 0.4rem 0.9rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">RAG Systems</span>
-    <span style="background: #f4f4f4; padding: 0.4rem 0.9rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">AI Agents</span>
-    <span style="background: #f4f4f4; padding: 0.4rem 0.9rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">LLM Evaluation</span>
-    <span style="background: #f4f4f4; padding: 0.4rem 0.9rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">NLP</span>
-    <span style="background: #f4f4f4; padding: 0.4rem 0.9rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Vector Search</span>
-    <span style="background: #f4f4f4; padding: 0.4rem 0.9rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">HPC & Cloud Deployment</span>
+  <p class="bio-text">
+    Beyond LLMs, I bring deep experience in <strong>computational modelling</strong> — numerical simulations, 
+    Monte Carlo methods, and large-scale simulation workflows — which gives me a unique ability to design 
+    rigorous evaluation pipelines and data-driven AI solutions.
+  </p>
+
+  <!-- Industry Applications (3 columns) -->
+  <div class="three-columns">
+    <div class="col">
+      <p class="col-title">🏭 Industrial Automation</p>
+      <p class="col-text">Enterprise RAG and AI agents for intelligent access to technical documentation</p>
+    </div>
+    <div class="col">
+      <p class="col-title">🏥 Healthcare</p>
+      <p class="col-text">Medical NLP, terminology extraction, and LLM fine-tuning</p>
+    </div>
+    <div class="col">
+      <p class="col-title">📚 Digital Humanities</p>
+      <p class="col-text">Text classification, topic modelling, and machine-generated content detection</p>
+    </div>
   </div>
 
-  <div style="display: flex; gap: 2rem; flex-wrap: wrap; border-top: 1px solid #eee; padding-top: 1.5rem;">
-    <div style="flex: 1; min-width: 180px;">
-      <p style="font-weight: 700; margin-bottom: 0.3rem;">🏭 Industry</p>
-      <p style="color: #555; line-height: 1.6; font-size: 0.95rem;">Industrial automation & enterprise knowledge management at ORCALYS</p>
-    </div>
-    <div style="flex: 1; min-width: 180px;">
-      <p style="font-weight: 700; margin-bottom: 0.3rem;">🏥 Healthcare</p>
-      <p style="color: #555; line-height: 1.6; font-size: 0.95rem;">Medical NLP, terminology extraction, and LLM fine-tuning at KdG University</p>
-    </div>
-    <div style="flex: 1; min-width: 180px;">
-      <p style="font-weight: 700; margin-bottom: 0.3rem;">📚 Digital Humanities</p>
-      <p style="color: #555; line-height: 1.6; font-size: 0.95rem;">Text classification, topic modelling, and machine-generated content detection</p>
-    </div>
-  </div>
-
-  <div style="margin-top: 2.5rem;">
-    <a href="/Portfolio/about/" style="display: inline-block; margin-right: 1rem; padding: 0.6rem 1.4rem; background: #0f1f3d; color: white; border-radius: 6px; text-decoration: none; font-weight: 600;">About Me</a>
-    <a href="/Portfolio/projects/" style="display: inline-block; padding: 0.6rem 1.4rem; border: 2px solid #0f1f3d; color: #0f1f3d; border-radius: 6px; text-decoration: none; font-weight: 600;">Projects</a>
+  <!-- Navigation Buttons -->
+  <div class="button-group">
+    <a href="/Portfolio/projects/" class="btn-primary">View Projects</a>
+    <a href="/Portfolio/cv/" class="btn-secondary">Full CV</a>
   </div>
 
 </div>
