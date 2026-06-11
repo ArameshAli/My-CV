@@ -2,6 +2,7 @@
 layout: page
 feature-img: "assets/img/pexels/travel2.JPG"
 ---
+
 <style>
   .home-container {
     max-width: 900px;
@@ -49,6 +50,91 @@ feature-img: "assets/img/pexels/travel2.JPG"
   .pill-highlight {
     background: #e0e7ff;
     color: #4f46e5;
+  }
+
+  .two-columns {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+  }
+
+  .info-card {
+    flex: 1;
+    min-width: 250px;
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 1.25rem;
+    border: 1px solid #eef2f6;
+  }
+
+  .info-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1e293b;
+    border-left: 3px solid #e8440a;
+    padding-left: 0.75rem;
+  }
+
+  .cert-item {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 0.6rem;
+    color: #475569;
+  }
+
+  .cert-year {
+    color: #e8440a;
+    font-weight: 500;
+    font-size: 0.75rem;
+    display: inline-block;
+    width: 55px;
+  }
+
+  .language-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .language-name {
+    font-weight: 600;
+    color: #1e293b;
+  }
+
+  .language-level {
+    color: #64748b;
+    font-size: 0.8rem;
+  }
+
+  .link-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .link-icons a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #1e293b;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+  }
+
+  .link-icons a:hover {
+    border-color: #e8440a;
+    color: #e8440a;
+    transform: translateY(-2px);
   }
 
   .three-columns {
@@ -141,10 +227,9 @@ feature-img: "assets/img/pexels/travel2.JPG"
     with vector databases.
   </p>
 
-  <!-- Divider -->
   <div class="divider"></div>
 
-  <!-- Expertise Pills (expanded) -->
+  <!-- Expertise Pills -->
   <div class="expertise-pills">
     <span class="pill pill-highlight">Enterprise RAG</span>
     <span class="pill pill-highlight">Graph RAG</span>
@@ -173,13 +258,58 @@ feature-img: "assets/img/pexels/travel2.JPG"
     LLMs using large-scale Needle-in-a-Haystack benchmarking frameworks.
   </p>
 
-  <p class="bio-text">
-    Beyond LLMs, I bring deep experience in <strong>computational modelling</strong> — numerical simulations, 
-    Monte Carlo methods, and large-scale simulation workflows — which gives me a unique ability to design 
-    rigorous evaluation pipelines and data-driven AI solutions.
-  </p>
+  <!-- Certificates + Languages Two-Column Section -->
+  <div class="two-columns">
+    <!-- Certificates -->
+    <div class="info-card">
+      <h3>📜 Certificates</h3>
+      <div class="cert-item">
+        <span class="cert-year">2023</span> Optimization with Python — Udemy
+      </div>
+      <div class="cert-item">
+        <span class="cert-year">2023</span> Python for Data Science — Udemy
+      </div>
+      <div class="cert-item">
+        <span class="cert-year">2023</span> Complete SQL Bootcamp — Udemy
+      </div>
+      <div class="cert-item">
+        <span class="cert-year">2020</span> Methods in Data Collection — FLAMES
+      </div>
+      <div class="cert-item">
+        <span class="cert-year">2020</span> Leadership and Team Work — UAntwerp
+      </div>
+    </div>
 
-  <!-- Industry Applications (3 columns) -->
+    <!-- Languages -->
+    <div class="info-card">
+      <h3>🌐 Languages</h3>
+      <div class="language-item">
+        <span class="language-name">Persian</span>
+        <span class="language-level">Native</span>
+      </div>
+      <div class="language-item">
+        <span class="language-name">English</span>
+        <span class="language-level">Professional Proficiency</span>
+      </div>
+      <div class="language-item">
+        <span class="language-name">Dutch</span>
+        <span class="language-level">Limited (improving)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Links / Social Section (with your actual links) -->
+  <div class="info-card" style="margin-bottom: 1.5rem;">
+    <h3>🔗 Find Me Online</h3>
+    <div class="link-icons">
+      <a href="https://github.com/AmirSabzalipour" target="_blank" rel="noopener noreferrer">📂 GitHub</a>
+      <a href="https://www.linkedin.com/in/amir-sabzalipour-38464252/" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=pPUw_XAAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">📖 Google Scholar</a>
+      <a href="https://www.youtube.com/watch?v=diynOHbDYFs&t=26s" target="_blank" rel="noopener noreferrer">🎥 YouTube (Schlieren Photography)</a>
+    </div>
+  </div>
+
+  <!-- Industry Applications -->
   <div class="three-columns">
     <div class="col">
       <p class="col-title">🏭 Industrial Automation</p>
@@ -197,8 +327,11 @@ feature-img: "assets/img/pexels/travel2.JPG"
 
   <!-- Navigation Buttons -->
   <div class="button-group">
-    <a href="/Portfolio/projects/" class="btn-primary">View Projects</a>
-    <a href="/Portfolio/cv/" class="btn-secondary">Full CV</a>
+    <a href="/Portfolio/skills/" class="btn-primary">Skills</a>
+    <a href="/Portfolio/work-experience/" class="btn-primary">Work Experience</a>
+    <a href="/Portfolio/education/" class="btn-primary">Education</a>
+    <a href="/Portfolio/projects/" class="btn-primary">Projects</a>
+    <a href="/Portfolio/contact/" class="btn-secondary">Contact</a>
   </div>
 
 </div>
