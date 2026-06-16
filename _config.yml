@@ -1,5 +1,5 @@
-baseurl: "/Portfolio"  # For project site (repository named 'Portfolio')
-url: "https://amirsabzalipour.github.io"
+baseurl: "/My-CV"  # For project site (repository named 'Portfolio')
+url: "https://arameshali.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
 title: Home                                # site's title
