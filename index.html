@@ -8,7 +8,6 @@ layout: page
   /* ============================================ */
   
   :root {
-    /* Light mode colors */
     --text-primary: #1e293b;
     --text-secondary: #334155;
     --text-muted: #475569;
@@ -24,7 +23,6 @@ layout: page
     --link-bg: white;
   }
 
-  /* Dark mode overrides */
   [data-theme="dark"],
   body.dark-mode,
   .dark-mode {
@@ -43,7 +41,6 @@ layout: page
     --link-bg: #0f172a;
   }
 
-  /* Also support prefers-color-scheme for system preference */
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       --text-primary: #e2e8f0;
@@ -62,10 +59,6 @@ layout: page
     }
   }
 
-  /* ============================================ */
-  /* INCREASE BANNER IMAGE HEIGHT                  */
-  /* ============================================ */
-  
   .page-header {
     min-height: 450px !important;
     position: relative;
@@ -92,10 +85,6 @@ layout: page
     margin-top: 1rem;
   }
   
-  /* ============================================ */
-  /* MAIN STYLES WITH DARK MODE SUPPORT            */
-  /* ============================================ */
-  
   .home-container {
     max-width: 900px;
     margin: 0 auto;
@@ -117,7 +106,6 @@ layout: page
     margin-bottom: 2rem;
   }
 
-  /* In dark mode, keep the title orange but slightly brighter */
   [data-theme="dark"] .title,
   body.dark-mode .title,
   .dark-mode .title {
@@ -162,7 +150,6 @@ layout: page
     color: #4f46e5;
   }
 
-  /* Dark mode pill highlight */
   [data-theme="dark"] .pill-highlight,
   body.dark-mode .pill-highlight,
   .dark-mode .pill-highlight {
@@ -202,7 +189,6 @@ layout: page
     padding-left: 0.75rem;
   }
 
-  /* Dark mode card heading border */
   [data-theme="dark"] .info-card h3,
   body.dark-mode .info-card h3,
   .dark-mode .info-card h3 {
@@ -230,7 +216,6 @@ layout: page
     width: 55px;
   }
 
-  /* Dark mode cert year */
   [data-theme="dark"] .cert-year,
   body.dark-mode .cert-year,
   .dark-mode .cert-year {
@@ -288,7 +273,6 @@ layout: page
     transform: translateY(-2px);
   }
 
-  /* Dark mode link hover */
   [data-theme="dark"] .link-icons a:hover,
   body.dark-mode .link-icons a:hover,
   .dark-mode .link-icons a:hover {
@@ -371,6 +355,7 @@ layout: page
     .home-container {
       padding: 0 1rem;
     }
+
     .name {
       font-size: 1.75rem;
     }
@@ -390,74 +375,88 @@ layout: page
 
 <div class="home-container">
 
-  <h1 class="name">Amir Sabzalipour</h1>
-  <p class="title">AI & LLM Engineer — Antwerp, Belgium</p>
+  <h1 class="name">Ali Aramesh</h1>
+  <p class="title">Industrial Commissioning, Test Bench & Validation Engineer — Liège, Belgium</p>
 
   <!-- Core Bio -->
   <p class="bio-text">
-    I am an <strong>AI & LLM Engineer</strong> specialising in large language models, RAG systems, AI agents, and NLP. 
-    My approach is shaped by a solid background in physics research — where I developed expertise in 
-    <strong>computational modelling, numerical simulations, and large-scale data analysis</strong> — which I now bring 
-    to building reliable, high-performance AI systems.
+    I am a <strong>practical industrial commissioning, test bench and validation engineer</strong> with experience across 
+    powertrain validation, electrical testing, automation support, HIL testing, SCADA systems, HV/MV installations, 
+    and multidisciplinary troubleshooting.
   </p>
 
   <p class="bio-text">
-    My work centres on <strong>end-to-end AI system development</strong> — from retrieval pipeline architecture and 
-    benchmark-driven evaluation to production deployment. I specialise in <strong>Needle-in-a-Haystack evaluation frameworks</strong> 
-    for long-context LLMs, <strong>agentic workflow automation</strong>, and building scalable <strong>RAG systems</strong> 
-    with vector databases.
+    My work focuses on helping industrial and automotive teams bring complex systems online, recover from faults, 
+    execute validation safely, and produce reliable technical evidence. I support <strong>test bench startup, 
+    recommissioning, PLC/I/O diagnostics, electrical checks, CAN-based diagnostics, measurement readiness, 
+    functional testing, and structured reporting</strong>.
+  </p>
+
+  <p class="bio-text">
+    Through <strong>InnovaDrive</strong>, I provide hands-on engineering support for industrial commissioning, 
+    test bench operation, powertrain validation, automation troubleshooting, safety-related diagnostics, 
+    and practical field engineering in Belgium and the wider Benelux region.
   </p>
 
   <div class="divider"></div>
 
   <!-- Expertise Pills -->
   <div class="expertise-pills">
-    <span class="pill pill-highlight">Enterprise RAG</span>
-    <span class="pill pill-highlight">Graph RAG</span>
-    <span class="pill pill-highlight">AI Agents</span>
-    <span class="pill pill-highlight">Agentic Workflows</span>
-    <span class="pill">LLM Evaluation</span>
-    <span class="pill">Retrieval Benchmarking</span>
-    <span class="pill">Synthetic Data Pipelines</span>
-    <span class="pill">NLP Pipelines</span>
-    <span class="pill">Text Classification</span>
-    <span class="pill">Topic Modelling</span>
-    <span class="pill">Terminology Extraction</span>
-    <span class="pill">Semantic Search</span>
-    <span class="pill">Vector Databases</span>
-    <span class="pill">Fine-tuning</span>
-    <span class="pill">Distributed Inference</span>
-    <span class="pill">Docker + Ray</span>
-    <span class="pill">HPC Deployment</span>
+    <span class="pill pill-highlight">Industrial Commissioning</span>
+    <span class="pill pill-highlight">Test Bench Engineering</span>
+    <span class="pill pill-highlight">Troubleshooting</span>
+    <span class="pill pill-highlight">Validation Support</span>
+    <span class="pill">Recommissioning</span>
+    <span class="pill">PLC/I/O Checks</span>
+    <span class="pill">TIA Portal</span>
+    <span class="pill">Siemens S7</span>
+    <span class="pill">SINAMICS / S120 Drives</span>
+    <span class="pill">SCADA Systems</span>
+    <span class="pill">CANape / CANoe</span>
+    <span class="pill">Siemens Testlab</span>
+    <span class="pill">Measurement & DAQ</span>
+    <span class="pill">Powertrain Testing</span>
+    <span class="pill">NVH Analysis</span>
+    <span class="pill">HIL Testing</span>
+    <span class="pill">Power Electronics</span>
+    <span class="pill">HV/MV Systems</span>
+    <span class="pill">Protection Relays</span>
+    <span class="pill">FAT/SAT</span>
+    <span class="pill">EPLAN / SEE Electrical</span>
+    <span class="pill">AI-Assisted Engineering Workflows</span>
   </div>
 
-  <!-- Education & Research Grounding -->
+  <!-- Engineering Positioning -->
   <p class="bio-text">
-    My work is grounded in rigorous research. I hold a <strong>Ph.D. in Physics</strong> and a 
-    <strong>Master of Digital Text Analysis</strong> from the University of Antwerp, where my 
-    thesis focused on evaluating retrieval effectiveness and context utilisation in long-context 
-    LLMs using large-scale Needle-in-a-Haystack benchmarking frameworks.
+    My engineering background combines automotive validation at Toyota, power electronics and capacitor testing 
+    at Hitachi Energy / ABB, model-based validation at Siemens, and electrical commissioning experience on 
+    SCADA, HV and MV systems. This gives me a broad field-oriented perspective across mechanical, electrical, 
+    automation, measurement, and validation domains.
   </p>
 
-  <!-- Certificates + Languages Two-Column Section -->
+  <!-- Services + Languages Two-Column Section -->
   <div class="two-columns">
-    <!-- Certificates -->
+
+    <!-- Core Services -->
     <div class="info-card">
-      <h3>📜 Certificates</h3>
+      <h3>⚙️ Core Services</h3>
       <div class="cert-item">
-        <span class="cert-year">2023</span> Optimization with Python — Udemy
+        <span class="cert-year">01</span> Industrial commissioning and recommissioning
       </div>
       <div class="cert-item">
-        <span class="cert-year">2023</span> Python for Data Science — Udemy
+        <span class="cert-year">02</span> Test bench readiness, startup and troubleshooting
       </div>
       <div class="cert-item">
-        <span class="cert-year">2023</span> Complete SQL Bootcamp — Udemy
+        <span class="cert-year">03</span> Powertrain, EV, NVH and functional validation support
       </div>
       <div class="cert-item">
-        <span class="cert-year">2020</span> Methods in Data Collection — FLAMES
+        <span class="cert-year">04</span> PLC/I/O checks, drive diagnostics and automation support
       </div>
       <div class="cert-item">
-        <span class="cert-year">2020</span> Leadership and Team Work — UAntwerp
+        <span class="cert-year">05</span> Measurement chain verification, CAN diagnostics and DAQ support
+      </div>
+      <div class="cert-item">
+        <span class="cert-year">06</span> FAT/SAT evidence, run logs and structured technical reporting
       </div>
     </div>
 
@@ -465,16 +464,20 @@ layout: page
     <div class="info-card">
       <h3>🌐 Languages</h3>
       <div class="language-item">
-        <span class="language-name">Persian</span>
-        <span class="language-level">Native</span>
-      </div>
-      <div class="language-item">
         <span class="language-name">English</span>
         <span class="language-level">Professional Proficiency</span>
       </div>
       <div class="language-item">
-        <span class="language-name">Dutch</span>
-        <span class="language-level">Limited (improving)</span>
+        <span class="language-name">French</span>
+        <span class="language-level">Professional / Working Proficiency</span>
+      </div>
+      <div class="language-item">
+        <span class="language-name">Persian</span>
+        <span class="language-level">Native</span>
+      </div>
+      <div class="language-item">
+        <span class="language-name">Japanese</span>
+        <span class="language-level">Basic</span>
       </div>
     </div>
   </div>
@@ -483,10 +486,10 @@ layout: page
   <div class="info-card" style="margin-bottom: 1.5rem;">
     <h3>🔗 Find Me Online</h3>
     <div class="link-icons">
-      <a href="https://github.com/AmirSabzalipour" target="_blank" rel="noopener noreferrer">📂 GitHub</a>
-      <a href="https://www.linkedin.com/in/amir-sabzalipour-38464252/" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
-      <a href="https://scholar.google.com/citations?user=pPUw_XAAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">📖 Google Scholar</a>
-      <a href="https://www.youtube.com/watch?v=diynOHbDYFs&t=26s" target="_blank" rel="noopener noreferrer">🎥 YouTube (Schlieren Photography)</a>
+      <a href="https://innovadrive.be/" target="_blank" rel="noopener noreferrer">🏭 InnovaDrive</a>
+      <a href="#" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+      <a href="#" target="_blank" rel="noopener noreferrer">📂 GitHub</a>
+      <a href="mailto:aliaramesh85@gmail.com">✉️ Email</a>
     </div>
   </div>
 
@@ -494,15 +497,26 @@ layout: page
   <div class="three-columns">
     <div class="col">
       <p class="col-title">🏭 Industrial Automation</p>
-      <p class="col-text">Enterprise RAG and AI agents for intelligent access to technical documentation</p>
+      <p class="col-text">
+        PLC/I/O diagnostics, SCADA verification, drive commissioning support, safety-chain checks, 
+        and troubleshooting of industrial control systems.
+      </p>
     </div>
+
     <div class="col">
-      <p class="col-title">🏥 Healthcare</p>
-      <p class="col-text">Medical NLP, terminology extraction, and LLM fine-tuning</p>
+      <p class="col-title">🚗 Powertrain & Test Benches</p>
+      <p class="col-text">
+        Support for BEV powertrain validation, driveline testing, NVH investigations, measurement setup, 
+        CAN diagnostics, and test bench readiness.
+      </p>
     </div>
+
     <div class="col">
-      <p class="col-title">📚 Digital Humanities</p>
-      <p class="col-text">Text classification, topic modelling, and machine-generated content detection</p>
+      <p class="col-title">⚡ Electrical & Energy Systems</p>
+      <p class="col-text">
+        HV/MV switchgear testing, protection relay checks, instrumentation loops, FAT/SAT documentation, 
+        and electrical commissioning support.
+      </p>
     </div>
   </div>
 
