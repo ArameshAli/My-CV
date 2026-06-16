@@ -1,0 +1,18 @@
+main:
+  - title: "Home"
+    url: /
+
+  - title: "Skills"
+    url: /skills/
+
+  - title: "Work Experience"
+    url: /work-experience/
+
+  - title: "Education"
+    url: /education/
+
+  - title: "Projects"
+    url: /projects/
+
+  - title: "Contact"
+    url: /contact/
