@@ -1,131 +1,119 @@
 ---
 layout: page
 title: Work Experience
-permalink: /experience/
-subtitle: ""
-feature-img: "assets/img/pexels/travel2.JPG"
-position: 3
+permalink: /work-experience/
 ---
 
-<style>
-  .exp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; padding: 1rem 0; }
-  .exp-card { background: #ffffff; border: 1px solid #f0f0f0; border-radius: 10px; padding: 1.4rem; border-left: 3px solid #2e7dd1; transition: border-left-color 0.2s; }
-  .exp-card:hover { border-left-color: #1a5aab; }
-  .exp-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 4px; }
-  .exp-title { font-size: 1.05rem; font-weight: 700; color: #0f1f3d; margin: 0; }
-  .exp-date { font-size: 0.82rem; font-weight: 600; color: #2e7dd1; white-space: nowrap; padding-top: 2px; }
-  .exp-org { font-size: 0.9rem; color: #888; margin-bottom: 10px; font-style: italic; }
-  .exp-body { font-size: 0.95rem; color: #555; line-height: 1.75; margin: 0 0 8px; }
-  .exp-body ul { padding-left: 1.1rem; margin: 0; }
-  .exp-body li { margin-bottom: 5px; }
-  .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
-  .tag { font-size: 0.8rem; font-weight: 600; padding: 4px 11px; border-radius: 20px; background: #f0f5fc; color: #2e7dd1; }
-</style>
+# Work Experience
 
-<div style="max-width: 860px; margin: 2rem auto; padding: 0 1rem;">
-<div class="exp-grid">
+## Founder / Industrial Commissioning & Test Bench Engineer  
+**InnovaDrive — Liège, Belgium**  
+**Dec 2025 – Present**
 
-  <div class="exp-card">
-    <div class="exp-header">
-      <p class="exp-title">AI & LLM Engineer</p>
-      <span class="exp-date">Nov 2025 – Present</span>
-    </div>
-    <p class="exp-org">ORCALYS — Belgium</p>
-    <div class="exp-body">
-      <ul>
-        <li>Designed and developed end-to-end RAG systems and AI agent solutions for industrial automation and enterprise knowledge management.</li>
-        <li>Built a full-stack AI platform integrating LLMs, vector databases, retrieval pipelines, and secure backend services for intelligent access to technical documentation.</li>
-        <li>Developed agentic workflow automation, scalable APIs, and real-time AI applications.</li>
-      </ul>
-    </div>
-    <div class="tag-row">
-      <span class="tag">RAG</span><span class="tag">AI Agents</span><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">LLMs</span>
-    </div>
-  </div>
+Providing hands-on industrial engineering support for transmission, powertrain, drivetrain, and industrial test bench environments.
 
-  <div class="exp-card">
-    <div class="exp-header">
-      <p class="exp-title">LLM Engineer — Intern</p>
-      <span class="exp-date">Oct 2024 – Jul 2025</span>
-    </div>
-    <p class="exp-org">Karel de Grote University of Applied Sciences & Arts — Antwerp, Belgium</p>
-    <div class="exp-body">
-      <ul>
-        <li>Developed NLP and ML pipelines for medical terminology extraction, classification, and simplification using LLMs and embedding-based models.</li>
-        <li>Built and evaluated AI systems using curated medical datasets, semantic embeddings, and benchmark-driven experimentation.</li>
-        <li>Contributed to distributed LLM fine-tuning infrastructure using Ray, Docker, and HPC resources.</li>
-      </ul>
-    </div>
-    <div class="tag-row">
-      <span class="tag">NLP</span><span class="tag">Fine-tuning</span><span class="tag">Ray</span><span class="tag">HPC</span><span class="tag">Medical AI</span>
-    </div>
-  </div>
+- Supporting commissioning, recommissioning, troubleshooting, validation execution, and startup of complex industrial systems.
+- Diagnosing faults across PLC logic, electrical cabinets, sensors, actuators, CAN communication, measurement chains, drives, safety circuits, and test procedures.
+- Preparing test readiness checklists, run logs, troubleshooting notes, acceptance evidence, and structured technical reports.
+- Supporting validation teams with NVH, functional, durability, efficiency, thermal, and powertrain-related test execution.
+- Developing AI-assisted engineering workflows for test bench documentation, troubleshooting guidance, onboarding, run-log generation, and evidence packs.
 
-  <div class="exp-card">
-    <div class="exp-header">
-      <p class="exp-title">Postdoctoral Researcher</p>
-      <span class="exp-date">Oct 2021 – Jun 2023</span>
-    </div>
-    <p class="exp-org">University of Antwerp — Antwerp, Belgium</p>
-    <div class="exp-body">
-      <ul>
-        <li>Python-based modelling of electrical resistivity at micron and nanometre scales.</li>
-        <li>Computational simulation of quantum, statistical, electrical, and topological phenomena.</li>
-      </ul>
-    </div>
-    <div class="tag-row">
-      <span class="tag">Python</span><span class="tag">Quantum modelling</span><span class="tag">Simulation</span>
-    </div>
-  </div>
+**Keywords:** Commissioning · Recommissioning · Test Bench Engineering · PLC/I/O Checks · CAN/CAN FD · Measurement & DAQ · Functional Safety · Troubleshooting · Validation Support
 
-  <div class="exp-card">
-    <div class="exp-header">
-      <p class="exp-title">Doctoral Researcher</p>
-      <span class="exp-date">Mar 2017 – Oct 2021</span>
-    </div>
-    <p class="exp-org">University of Antwerp — Antwerp, Belgium</p>
-    <div class="exp-body">
-      <ul>
-        <li>Materials simulations using VASP on an HPC cluster.</li>
-        <li>Numeric and analytical computations using Wolfram Language and Python.</li>
-      </ul>
-    </div>
-    <div class="tag-row">
-      <span class="tag">VASP</span><span class="tag">HPC</span><span class="tag">Mathematica</span><span class="tag">Python</span>
-    </div>
-  </div>
+---
 
-  <div class="exp-card">
-    <div class="exp-header">
-      <p class="exp-title">Visiting Researcher</p>
-      <span class="exp-date">Feb 2016 – Feb 2017</span>
-    </div>
-    <p class="exp-org">Institute for Research in Fundamental Sciences — Iran</p>
-    <div class="exp-body">
-      <ul>
-        <li>Numerical modelling of anomalous transverse electrical properties of magnetic materials.</li>
-      </ul>
-    </div>
-    <div class="tag-row">
-      <span class="tag">Numerical modelling</span><span class="tag">Magnetic materials</span>
-    </div>
-  </div>
+## Industrial Test Bench / Validation Support Engineer  
+**Toyota — Zaventem, Belgium**  
+**Mar 2025 – Nov 2025**
 
-  <div class="exp-card">
-    <div class="exp-header">
-      <p class="exp-title">Visiting Researcher</p>
-      <span class="exp-date">Oct 2015 – Jan 2016</span>
-    </div>
-    <p class="exp-org">Uppsala University — Uppsala, Sweden</p>
-    <div class="exp-body">
-      <ul>
-        <li>Nanoscale simulations of 2D materials using Quantum ESPRESSO.</li>
-      </ul>
-    </div>
-    <div class="tag-row">
-      <span class="tag">Quantum ESPRESSO</span><span class="tag">2D materials</span><span class="tag">DFT</span>
-    </div>
-  </div>
+- Supported industrial test bench readiness, troubleshooting, and validation execution under real operational constraints.
+- Performed system-level checks on measurement channels, sensors, actuators, electrical interfaces, test assets, and reporting workflows.
+- Assisted with fault investigation, deviation tracking, recovery procedures, and restart readiness.
+- Reviewed test requests, run sheets, measurement setups, signal quality, and evidence requirements before execution.
+- Improved practical documentation including checklists, troubleshooting flows, operator guidance, and handover notes.
 
-</div>
-</div>
+**Keywords:** Test Bench Readiness · Validation Execution · Measurement Checks · CAN Diagnostics · Run Sheets · Evidence Packs · Troubleshooting
+
+---
+
+## Electrical Design & Test Engineer  
+**Toyota — Zaventem, Belgium**  
+**Feb 2024 – Feb 2025**
+
+- Developed and supported advanced vehicle electrical architecture activities, including UWB-based system integration.
+- Redesigned wire harnesses, connectors, and electrical interfaces for vehicle integration.
+- Prepared removal, installation, and technical instruction documentation for engineering and workshop use.
+- Coordinated multidisciplinary activities between design, validation, manufacturing, and project teams.
+- Supported issue tracking, design clarification, documentation updates, and technical problem solving.
+
+**Keywords:** EPLAN · CATIA · Electrical Architecture · Wire Harness · System Integration · Technical Documentation
+
+---
+
+## Powertrain & Test Engineer  
+**Toyota — Zaventem, Belgium**  
+**Apr 2023 – Jan 2024**
+
+- Supported BEV powertrain and driveline validation activities including driveshaft design, benchmarking, NVH investigation, and component follow-up.
+- Performed NVH benchmarking on electric vehicles including Audi e-tron, Volvo XC40, and Toyota bZ4X.
+- Supported transfer path analysis to identify powertrain contribution to vehicle comfort and acoustic behavior.
+- Prepared RDDP documentation and supported redesign activities according to engineering drawings and validation feedback.
+- Designed and analyzed interior permanent magnet motor concepts for BEV applications.
+
+**Keywords:** Siemens Testlab · CATIA V5 · ANSYS Motor-CAD · ANSYS Maxwell · CANape · NVH · TPA · BEV Powertrain
+
+---
+
+## Test Engineer — Power Electronics / HIL Testing  
+**Hitachi Energy — Charleroi, Belgium**  
+**Jun 2022 – Mar 2023**
+
+- Executed HIL validation tests for active filter systems under simulated grid conditions.
+- Tested IGBT drives, AC/DC power modules, control PCBs, and power-electronics assemblies.
+- Evaluated control algorithm behavior using Typhoon HIL and real-time simulation workflows.
+- Assembled, debugged, and functionally tested PQactiF systems including PCB rework and issue investigation.
+- Automated test execution and reporting using Python and Allure framework.
+
+**Keywords:** Typhoon HIL · dSPACE · Power Electronics · IGBT Drives · PCB Debugging · Python · Real-Time Simulation
+
+---
+
+## Test & Validation Engineer — Capacitor Lab  
+**ABB — Charleroi, Belgium**  
+**Apr 2022 – Mar 2023**
+
+- Performed validation and failure-analysis testing on metallized film capacitors for industrial power applications.
+- Executed ageing, humidity, thermal, and DC leakage-current tests according to defined procedures.
+- Conducted tear-down analysis to investigate capacitor condition, degradation, and potential failure causes.
+- Documented test results, analysis findings, deviations, and technical conclusions for engineering review.
+- Participated in RAC / root-cause analysis meetings and supported structured issue investigation.
+
+**Keywords:** Capacitor Testing · Film Capacitors · Ageing Test · Leakage Current · Tear-Down Analysis · Root Cause Analysis
+
+---
+
+## Model-Based Testing & Validation Engineer — Internship  
+**Siemens — Belgium**  
+**Sep 2019 – Feb 2020**
+
+- Supported V-cycle validation activities for a hybrid hydraulic powertrain system.
+- Derived and implemented test cases from system-level requirements.
+- Executed MiL and SiL simulations in MATLAB/Simulink.
+- Automated test execution using Jenkins and supported coverage improvement.
+- Used Polarion for requirements traceability, test-case management, and validation evidence.
+
+**Keywords:** Model-Based Testing · V-Cycle · MiL · SiL · MATLAB/Simulink · Jenkins · Polarion
+
+---
+
+## Electrical Test & Commissioning Engineer — SCADA / HV / MV Systems  
+**METANIR — Tehran**  
+**Apr 2012 – Mar 2015**
+
+- Performed commissioning and maintenance testing of HV and MV switchgear.
+- Tested and verified protection relays, electrical panels, instrumentation loops, and transducers.
+- Reviewed manufacturer and contractor test results, FAT/SAT documentation, and technical reports.
+- Supported SCADA verification, signal tracing, and electrical interface checks.
+- Coordinated with site teams, contractors, and engineering stakeholders during commissioning and maintenance activities.
+
+**Keywords:** HV/MV Switchgear · Protection Relays · SCADA · FAT/SAT · Instrumentation Loops · EPLAN · SEE Electrical · TIA Portal · Siemens S7 PLC · SINAMICS Drives
