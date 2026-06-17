@@ -17,11 +17,11 @@ Powertrain Engineering · EV Systems · Driveline Dynamics · NVH · Battery Sys
 
 ---
 
-## M.Sc. Electrical Engineering — Energy Systems  
-**Université de Liège**  
+## M.Sc. in System Engineering — Complex Systems  
+**Université de Bordeaux**  
 **2017 – 2018**
 
-Graduate-level studies focused on electrical energy systems, power systems, electrical networks, and energy conversion.
+Graduate-level studies focused on complex mechatronics systems.
 
 **Relevant topics:**  
 Power Systems · Energy Systems · Electrical Networks · Grid Connection · Electrical Engineering
