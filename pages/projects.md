@@ -1,24 +1,53 @@
---- 
+---
 layout: page
-title : Projects
+title: Projects
 permalink: /projects/
-subtitle: "" 
-feature-img: "assets/img/pexels/travel2.JPG"
-position: 6
 ---
 
-## Projects
+# Projects
 
-### EXPLAINMED: Simplifying Medical Reports for Patients
+## IPM Motor Design for EV Applications  
+**ANSYS Motor-CAD / ANSYS Maxwell**
 
-EXPLAINMED is an AI-powered tool that leverages large language models and NLP to transform 
-complex Dutch medical reports into clear, patient-friendly language. The system automatically 
-categorizes and translates technical medical terminology into everyday Dutch, specifically 
-designed to help heart disease patients better comprehend their health information. By 
-demystifying medical jargon, EXPLAINMED enhances patient understanding of diagnoses and 
-treatments, leading to improved treatment adherence. This increased comprehension could 
-potentially reduce unnecessary healthcare spending while empowering patients to take a more 
-active role in their care journey.
+Designed and analyzed an interior permanent magnet motor concept for electric vehicle applications. The project focused on torque performance, power density, efficiency, and high-speed operating behavior.
+
+**Keywords:** IPM Motor · EV Powertrain · Motor-CAD · Maxwell · Electric Machines
+
+---
+
+## Driveline Shock & Vibration Suppression  
+**Master Thesis — University of Antwerp**
+
+Built and commissioned two identical drivelines on mobile chassis. The project focused on suppressing shock and vibration by redesigning the speed controller and using flexible coupling.
+
+**Keywords:** Driveline Test Rig · Siemens Starter · S120 Servo Drives · MATLAB · PI Control · Flexible Coupling · Commissioning
+
+---
+
+## Vibroacoustic Comfort in Electric Vehicles  
+**Vehicle Modelling / NVH Analysis**
+
+Developed a half-vehicle model to analyze comfort behavior and vibration transmission. The project involved excitation data, transmissibility functions, and comparison with experimental vehicle acceleration data.
+
+**Keywords:** NVH · Vibroacoustic Comfort · Vehicle Dynamics · ANSYS · Simulink · Signal Analysis
+
+---
+
+## Hybrid Hydraulic Powertrain Validation  
+**Siemens Internship**
+
+Supported model-based testing and validation of a hybrid hydraulic powertrain system. Activities included requirements-based test case development, MiL/SiL simulations, Jenkins automation, and Polarion traceability.
+
+**Keywords:** V-Cycle · Model-Based Testing · MiL · SiL · Simulink · Jenkins · Polarion · Hydraulic Powertrain
+
+---
+
+## Sustainable Vehicle Powertrains  
+**Vehicle Simulation / Energy Systems**
+
+Analyzed hybrid and electric vehicle powertrain architectures with focus on energy efficiency, fuel economy, control strategy, and vehicle operating cycles.
+
+**Keywords:** Hybrid Powertrain · BEV · WLTP · CADC · Vehicle Simulation · Energy Efficiencyactive role in their care journey.
 
 ---
 
